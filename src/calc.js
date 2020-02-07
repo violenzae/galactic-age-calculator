@@ -1,14 +1,15 @@
 export class Ager {
   constructor(){
-    this.earthAge
-    this.mercuryAge
-    this.venusAge
-    this.marsAge
-    this.jupiterAge
-    this.earthExpectancy
-    this.mercuryRemain
-    this.venusRemain
-    this.marsRemain
-    this.jupiterRemain
+    this.earthAge = earthAge;
+    this.mercuryAge = mercuryAge;
+    this.venusAge = venusAge;
+    this.marsAge = marsAge;
+    this.jupiterAge = jupiterAge;
+    this.earthExpectancy = earthExpectancy;
+    this.mercuryRemain = mercuryRemain;
+    this.venusRemain = venusRemain;
+    this.marsRemain = marsRemain;
+    this.jupiterRemain = jupiterRemain;
   }
 }
+
