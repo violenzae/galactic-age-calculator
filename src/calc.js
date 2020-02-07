@@ -81,3 +81,10 @@ export class Ager {
     }
   }
 }
+
+excessYearToPos() {
+  if (this.remainConvert() < 0) {
+  this.overExpectancy = (this.remainconvert())*-1;
+  return this.overExpectancy;
+  }
+}
