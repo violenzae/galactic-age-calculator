@@ -71,7 +71,7 @@ describe('planet years over life expectancy', () => {
   test('returns how many planet years the person has lived past their life expectancy, if applicable', () => {
   let newAger = new Ager("Mercury", 90, "Female", "White", "Bachelors", 0, 84)
   
-  newAger.overExpectancy = (newAger.remainConvert())*-1;
+  newAger.excessYearToPos();
 
   expect(newAger.overExpectancy).toEqual(25);
   });

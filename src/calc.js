@@ -80,11 +80,12 @@ export class Ager {
         return this.planetRemain;
     }
   }
-}
+
 
 excessYearToPos() {
   if (this.remainConvert() < 0) {
-  this.overExpectancy = (this.remainconvert())*-1;
+  this.overExpectancy = ((this.remainConvert())*-1);
   return this.overExpectancy;
   }
+}
 }
