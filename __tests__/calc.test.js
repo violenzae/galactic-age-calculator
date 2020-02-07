@@ -58,9 +58,9 @@ describe('earth life expectancy', () => {
 describe('remaining years on planet', () => {
 
   test('returns remaining years in the selected planets year units', () => {
-  let newAger = new Ager("Mercury", 32, "Female", "White", "Bachelors")
+  let newAger = new Ager("Mercury", 32, "Female", "White", "Bachelors", 0, 84)
   
-
+  newAger.planetRemain = Math.floor((newAger.earthExpectancy - newAger.earthAge)/.24);
 
   expect(newAger.planetRemain).toEqual(216);
   });
