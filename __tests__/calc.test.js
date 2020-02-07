@@ -32,3 +32,14 @@ describe('mars convert', () => {
   expect(newAger.marsAge).toEqual(17);
   });
 });
+
+describe('jupiter convert', () => {
+
+  test('returns age in jupiter years', () => {
+  let newAger = new Ager("jupiter", 32)
+
+
+
+  expect(newAger.jupiterAge).toEqual(2);
+  });
+});
