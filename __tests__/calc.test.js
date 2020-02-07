@@ -43,3 +43,14 @@ describe('jupiter convert', () => {
   expect(newAger.jupiterAge).toEqual(2);
   });
 });
+
+describe('earth life expectancy', () => {
+
+  test('returns life expectancy in earth years', () => {
+  let newAger = new Ager("", 0, "Female", "White", "Bachelors")
+  
+
+
+  expect(newAger.earthExpectancy).toEqual(84);
+  });
+});
