@@ -38,7 +38,7 @@ describe('jupiter convert', () => {
   test('returns age in jupiter years', () => {
   let newAger = new Ager("jupiter", 32)
 
-
+  newAger.jupiterAge = Math.floor(newAger.earthAge/11.86);
 
   expect(newAger.jupiterAge).toEqual(2);
   });
