@@ -23,6 +23,9 @@ export class Ager {
     } else if(this.planet === "Mars") {
       this.marsAge = Math.floor(this.earthAge/1.88);
       return this.marsAge;
+    } else if(this.planet === "Jupiter") {
+      this.jupiterAge = Math.floor(this.earthAge/11.86);
+      return this.jupiterAge;
     }
   }
 }

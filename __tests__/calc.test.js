@@ -36,9 +36,9 @@ describe('mars convert', () => {
 describe('jupiter convert', () => {
 
   test('returns age in jupiter years', () => {
-  let newAger = new Ager("jupiter", 32)
+  let newAger = new Ager("Jupiter", 32)
 
-  newAger.jupiterAge = Math.floor(newAger.earthAge/11.86);
+  newAger.baseAgeConvert();
 
   expect(newAger.jupiterAge).toEqual(2);
   });
