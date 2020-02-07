@@ -3,11 +3,11 @@ import {Ager} from './../src/calc.js';
 describe('Mercury convert', () => {
 
   test('returns age in mercury years', () => {
-  let newAger = new Ager("Mercury", 32, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+  let newAger = new Ager("Mercury", 32);
   
   newAger.baseAgeConvert();
   
-  expect(newAger.mercuryAge).toEqual(133);
+  expect(newAger.planetAge).toEqual(133);
   });
 });
 
@@ -18,7 +18,7 @@ describe('venus convert', () => {
 
   newAger.baseAgeConvert();
 
-  expect(newAger.venusAge).toEqual(51);
+  expect(newAger.planetAge).toEqual(51);
   });
 });
 
@@ -29,7 +29,7 @@ describe('mars convert', () => {
 
   newAger.baseAgeConvert();
 
-  expect(newAger.marsAge).toEqual(17);
+  expect(newAger.planetAge).toEqual(17);
   });
 });
 
@@ -40,7 +40,7 @@ describe('jupiter convert', () => {
 
   newAger.baseAgeConvert();
 
-  expect(newAger.jupiterAge).toEqual(2);
+  expect(newAger.planetAge).toEqual(2);
   });
 });
 
@@ -52,5 +52,16 @@ describe('earth life expectancy', () => {
   newAger.expectancyEarthTotaler();
 
   expect(newAger.earthExpectancy).toEqual(84);
+  });
+});
+
+describe('remaining years on planet', () => {
+
+  test('returns remaining years in the selected planets year units', () => {
+  let newAger = new Ager("Mercury", 32, "Female", "White", "Bachelors")
+  
+  newAger.planetRemain = Math.floor[(newAger.earthExpectancy - newAger.earthAge)/.24];
+
+  expect(newAger.earthExpectancy).toEqual(216);
   });
 });
