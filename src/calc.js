@@ -19,7 +19,10 @@ export class Ager {
       return this.mercuryAge;
     } else if(this.planet === "Venus") {
       this.venusAge = Math.floor(this.earthAge/.62);
-      return this.venusAge; 
+      return this.venusAge;
+    } else if(this.planet === "Mars") {
+      this.marsAge = Math.floor(this.earthAge/1.88);
+      return this.marsAge;
     }
   }
 }

@@ -27,7 +27,7 @@ describe('mars convert', () => {
   test('returns age in mars years', () => {
   let newAger = new Ager("Mars", 32)
 
-  newAger.marsAge = Math.floor(newAger.earthAge/1.88);
+  newAger.baseAgeConvert();
 
   expect(newAger.marsAge).toEqual(17);
   });
