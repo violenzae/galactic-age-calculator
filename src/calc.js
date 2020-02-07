@@ -14,9 +14,12 @@ export class Ager {
   }
 
   baseAgeConvert() {
-    if (this.planet = "Mercury") {
+    if(this.planet === "Mercury") {
       this.mercuryAge = Math.floor(this.earthAge/.24);
       return this.mercuryAge;
+    } else if(this.planet === "Venus") {
+      this.venusAge = Math.floor(this.earthAge/.62);
+      return this.venusAge; 
     }
   }
 }

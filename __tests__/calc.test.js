@@ -15,7 +15,9 @@ describe('venus convert', () => {
 
   test('returns age in venus years', () => {
   let newAger = new Ager("Venus", 32)
-  newAger.venusAge = Math.floor(newAger.earthAge/.62);
+
+  newAger.baseAgeConvert();
+
   expect(newAger.venusAge).toEqual(51);
   });
 });
