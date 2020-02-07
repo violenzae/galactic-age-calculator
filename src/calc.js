@@ -1,5 +1,6 @@
 export class Ager {
-  constructor(earthAge, mercuryAge, venusAge, marsAge, jupiterAge, earthExpectancy, mercuryRemain, venusRemain, marsRemain, jupiterRemain){
+  constructor(planet, earthAge, mercuryAge, venusAge, marsAge, jupiterAge, earthExpectancy, mercuryRemain, venusRemain, marsRemain, jupiterRemain){
+    this.planet = planet;
     this.earthAge = earthAge;
     this.mercuryAge = mercuryAge;
     this.venusAge = venusAge;
@@ -11,5 +12,11 @@ export class Ager {
     this.marsRemain = marsRemain;
     this.jupiterRemain = jupiterRemain;
   }
-}
 
+  baseAgeConvert() {
+    if (this.planet = "Mercury") {
+      this.mercuryAge = Math.floor(this.earthAge/.24);
+      return this.mercuryAge;
+    }
+  }
+}
