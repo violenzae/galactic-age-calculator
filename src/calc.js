@@ -1,5 +1,5 @@
 export class Ager {
-  constructor(planet, earthAge, gender, race, education, mercuryAge, venusAge, marsAge, jupiterAge, earthExpectancy){
+  constructor(planet, earthAge, gender, race, education, planetAge, earthExpectancy, planetRemain){
     this.planet = planet;
     this.earthAge = earthAge;
     this.gender = gender;
