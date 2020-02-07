@@ -65,3 +65,14 @@ describe('remaining years on planet', () => {
   expect(newAger.planetRemain).toEqual(216);
   });
 });
+
+describe('planet years over life expectancy', () => {
+
+  test('returns how many planet years the person has lived past their life expectancy, if applicable', () => {
+  let newAger = new Ager("Mercury", 90, "Female", "White", "Bachelors", 0, 84)
+  
+
+
+  expect(newAger.overExpectancy).toEqual(25);
+  });
+});
