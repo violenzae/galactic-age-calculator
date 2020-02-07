@@ -13,3 +13,12 @@ span {
 #years-over {
   display: none;
 } */
+
+#heading {
+  text-align: center;
+  text-shadow: rgb(255, 0, 0) 0 -5px 1px;
+  font-size: 80px;
+  color: black;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+}

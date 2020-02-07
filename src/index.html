@@ -8,7 +8,7 @@
     <div class="panel panel-default">
       <div class="row">
         <div class="col-md-6">
-          <h2>Enter your age and select a planet to find out how old you'd be there according to their solar year.</h2>
+          <h2>Enter your age and select a planet to find out how old you'd be according to their solar year.</h2>
           <form id="pizzaForm">
             <div class="form-group">
               <label for="planet">Select a planet:</label>
@@ -17,7 +17,7 @@
                 <option value="Venus">Venus</option>
                 <option value="Mars">Mars</option>
                 <option value="Jupiter">Jupiter</option>
-              </select>
+              </select><br>
               <label for ="age">Enter your age in years:</label>
               <input type="text" id="age" required>
             </div>
@@ -34,6 +34,12 @@
                 <option value="Black">Black</option>
                 <option value="Hispanic">Hispanic</option>
                 <option value="Asian">Asian</option>
+              </select>
+              <label for="education">Highest Education Achieved:</label>
+              <select class="form-control" id="education">
+                <option value="No Highschool">Less than Highschool</option>
+                <option value="Highschool">Highschool</option>
+                <option value="Bachelors">Bachelors Degree or above</option>
               </select>
             </div>
             <button type="submit" class="btn btn-danger">Submit</button>
