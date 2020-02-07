@@ -49,7 +49,7 @@ describe('earth life expectancy', () => {
   test('returns life expectancy in earth years', () => {
   let newAger = new Ager("", 0, "Female", "White", "Bachelors")
   
-  newAger.earthExpectancy = 81 + 3;
+  newAger.expectancyEarthTotaler();
 
   expect(newAger.earthExpectancy).toEqual(84);
   });
