@@ -51,41 +51,41 @@ export class Ager {
   expectancyEdu() {
     if (this.gender === "Female" && this.education === "Bachelors") {
       return this.earthExpectancy += 3;
-  } else if (this.gender === "Male" && this.education === "Bachelors") {
+    } else if (this.gender === "Male" && this.education === "Bachelors") {
       return this.earthExpectancy += 2;
-  } else if (this.gender === "Male" && this.education === "No Highschool") {
+    } else if (this.gender === "Male" && this.education === "No Highschool") {
       return this.earthExpectancy -= 7;
-  } else if (this.gender === "Female" && this.education === "No Highschool") {
+    } else if (this.gender === "Female" && this.education === "No Highschool") {
       return this.earthExpectancy -=6;
-      }
     }
+  }
 
   expectancyEarthTotaler() {
-  this.expectancyDemo() + this.expectancyEdu();
-  return this.earthExpectancy;
+    this.expectancyDemo() + this.expectancyEdu();
+    return this.earthExpectancy;
   }
  
   remainConvert() {
     if (this.planet === "Mercury") {
-        this.planetRemain = Math.floor((this.earthExpectancy - this.earthAge)/.24);
-        return this.planetRemain;
+      this.planetRemain = Math.floor((this.earthExpectancy - this.earthAge)/.24);
+      return this.planetRemain;
     } else if(this.planet === "Venus") {
-        this.planetRemain = Math.floor((this.earthExpectancy - this.earthAge)/.62);
-        return this.planetRemain;
+      this.planetRemain = Math.floor((this.earthExpectancy - this.earthAge)/.62);
+      return this.planetRemain;
     } else if(this.planet === "Mars") {
-        this.planetRemain = Math.floor((this.earthExpectancy - this.earthAge)/1.88);
+      this.planetRemain = Math.floor((this.earthExpectancy - this.earthAge)/1.88);
       return this.planetRemain;
     } else if(this.planet === "Jupiter") {
-        this.planetRemain = Math.floor((this.earthExpectancy - this.earthAge)/11.86);
-        return this.planetRemain;
+      this.planetRemain = Math.floor((this.earthExpectancy - this.earthAge)/11.86);
+      return this.planetRemain;
     }
   }
 
 
-excessYearToPos() {
-  if (this.remainConvert() < 0) {
-  this.overExpectancy = ((this.remainConvert())*-1);
-  return this.overExpectancy;
+  excessYearToPos() {
+    if (this.remainConvert() < 0) {
+      this.overExpectancy = ((this.remainConvert())*-1);
+      return this.overExpectancy;
+    }
   }
-}
 }
