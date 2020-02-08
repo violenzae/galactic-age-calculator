@@ -28,7 +28,7 @@ $(document).ready(function() {
     $("#planet-name").text(planet);
     $("#age-entered").text(earthAge);
     $("#planet-age").text(planetAge);
-    $("#earth-expectancy").text(earthExpectancy)
+    $("#earth-expectancy").text(earthExpectancy);
 
     $("#planet-remain").text(planetRemain); 
     $("#planet-over").text(overExpectancy);

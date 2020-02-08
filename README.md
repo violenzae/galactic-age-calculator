@@ -6,14 +6,12 @@
 
 ## Description
 
-_This is an HTML page that contains a jQuery powered form that returns the user's age on other planets, as well as their remaining life expectancy years in the corresponding planet's year unit or the amount of years that have surpassed life expectancy. 
-
-<!-- It uses branching logic, objects and prototypes and arrays, as well as "for each" and "for" loops. It is designed with Bootstrap CSS._ -->
+_This is an HTML page that contains a jQuery powered form that returns the user's age on other planets, as well as their remaining life expectancy years in the corresponding planet's year unit or the amount of years that have surpassed their average predicted life expectancy. It uses branching logic and classes made of objects and prototypes. It is designed with Bootstrap CSS._
 
 ## Setup/Installation Requirements
 
 * _Clone or download from Github Repository._
-*_Create the webpack bundled /dist directory by running the terminal command "npm install" in the root directory._
+* _Create the webpack bundled /dist directory by running the terminal command "npm install" in the root directory._
 * _Open /dist/index.html in your preferred internet browser._
 
 ## Specifications
